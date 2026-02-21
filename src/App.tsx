@@ -10,6 +10,7 @@ import { ThemeProvider } from "@/components/ThemeProvider"
 import { SidebarProvider, SidebarInset} from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/AppSidebar"
 import { Header } from "@/components/Header"
+import { Page } from "@/components/Page"
 
 export const App = () => {
   return (
@@ -19,6 +20,12 @@ export const App = () => {
 
         <SidebarInset>
           <Header/>
+
+          <main>
+            <Page>
+
+            </Page>
+          </main>
         </SidebarInset>
 
       </SidebarProvider>

@@ -5,6 +5,7 @@
 
 //Components
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 //Hooks
 import { useSidebar } from "@/components/ui/sidebar"
@@ -19,6 +20,10 @@ export const Header = () => {
     return (
         <header className="flex justify-between gap-1 item-center py-3 ps-4 pe-2 border-b lg:hidden">
             <Logo/>
+
+            <div className="ml-auto">
+                <ThemeToggle/>
+            </div>
 
             <Button variant="ghost" size="icon" onClick={ toggleSidebar } aria-label="Toggle mobile menu">
                 <MenuIcon/>
